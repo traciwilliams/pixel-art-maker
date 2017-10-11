@@ -35,7 +35,7 @@ function makeGrid() {
 		tableBody += '<tr>';
 		for (var j = 0; j < gridWidth; j++) {
 			tableBody += '<td>'; 
-			tableBody += 'Cell' + i + ',' + j;
+			// tableBody += 'Cell' + i + ',' + j;
 			tableBody += '</td>';
 		}
 		tableBody += '</tr>\n';
