@@ -39,7 +39,7 @@ td {
 }
 
 .clicked {
-    background-color: green;
+    background-color: pink;
 }
 
 input[type=number] {

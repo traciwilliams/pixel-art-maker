@@ -7,7 +7,7 @@
     
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <h1>Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
     
@@ -15,18 +15,20 @@
 
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_height" name="height" min="10" value="10">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="number" id="input_width" name="width" min="10" value="10">
 
         <input type="button" value="Make Grid" onclick="makeGrid();"> 
+
+        <input type="button" value="Reset Grid" onclick="resetGrid();"> 
     </form>
 
 
 
 
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+    <input type="color" id="colorPicker""> this is my color
 
     <h2>Design Canvas</h2>
     <table id="pixel_canvas">

@@ -28,7 +28,10 @@ function makeGrid() {
 	let tableBody = '';
 	
 
-	let colorPicker = document.getElementById('colorPicker').value;
+	//let colorPicker = document.getElementById('colorPicker').value;
+	//et colorPicker = document.getElementById('colorPicker').style.color = '';
+
+
 
 	for (var i = 0; i < gridHeight; i++) {
 		
@@ -49,6 +52,11 @@ function makeGrid() {
 
 };
 
+
+function resetGrid() {
+	document.getElementById('pixel_canvas').innerHTML = '';
+
+}
 
 
 
