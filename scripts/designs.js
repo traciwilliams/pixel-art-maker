@@ -24,7 +24,7 @@ function makeGrid() {
 
 	let gridHeight = document.getElementById('input_height').value;
 	let gridWidth = document.getElementById('input_width').value;
-	let tableHeader = '<table border="1">\n';
+	let tableBegin = '<table border="1">\n';
 	let tableBody = '';
 	
 
@@ -34,12 +34,24 @@ function makeGrid() {
 		
 		tableBody += '<tr>';
 		for (var j = 0; j < gridWidth; j++) {
-			tableBody += '<td>'; 
-			// tableBody += 'Cell' + i + ',' + j;
+			tableBody += '<td class="clicked">'; 
+			//tableBody += 'Cell' + i + ',' + j;
 			tableBody += '</td>';
 		}
 		tableBody += '</tr>\n';
 	}
-	let tableFooter = '</table>';
-	document.getElementById('pixel_canvas').innerHTML = tableHeader + tableBody + tableFooter;
+	let tableEnd = '</table>';
+	document.getElementById('pixel_canvas').innerHTML = tableBegin + tableBody + tableEnd;
+
+	$('.clicked').click(function() {
+	  $(this).toggleClass('clicked');
+	});
+
 };
+
+
+
+
+
+
+

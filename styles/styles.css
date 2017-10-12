@@ -35,6 +35,11 @@ tr {
 
 td {
     width: 20px;
+    // background-color: pink;
+}
+
+.clicked {
+    background-color: green;
 }
 
 input[type=number] {
