@@ -12,13 +12,7 @@ $(document).ready(function(){
 });
 */
 
-// Select color input
-//var colorPicker = document.getElementById("colorPicker").value;
-// Select size input
-//var gridHeight = document.getElementById("input_height").value;
-//var gridWidth = document.getElementById("input_width").value;
-//var tableBody = "";
-// When size is submitted by the user, call makeGrid()
+
 
 function makeGrid() {
 
@@ -27,10 +21,6 @@ function makeGrid() {
 	let tableBegin = '<table border="1">\n';
 	let tableBody = '';
 	
-
-	//colorPicker.value;
-
-
 
 	for (var i = 0; i < gridHeight; i++) {
 		
@@ -45,26 +35,13 @@ function makeGrid() {
 	let tableEnd = '</table>';
 	document.getElementById('pixel_canvas').innerHTML = tableBegin + tableBody + tableEnd;
 
-
-
-	// $('.clicked').click(function() {
-	//   $(this).toggleClass('clicked');
-	// });
-
-
 	let colorPicker = document.getElementById('colorPicker');
 
-
 	$('#pixel_canvas').on("click", 'td', function() {
-	    //alert ("Hello World!");
 	    $(this).css("background-color", function() {
 	    	return colorPicker.value;
 	    })
 	})
-
-//reset button
-
-
 };
 
 function resetGrid() {
