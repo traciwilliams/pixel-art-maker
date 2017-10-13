@@ -28,8 +28,7 @@ function makeGrid() {
 	let tableBody = '';
 	
 
-	//let colorPicker = document.getElementById('colorPicker').value;
-	//et colorPicker = document.getElementById('colorPicker').style.color = '';
+	//colorPicker.value;
 
 
 
@@ -46,17 +45,34 @@ function makeGrid() {
 	let tableEnd = '</table>';
 	document.getElementById('pixel_canvas').innerHTML = tableBegin + tableBody + tableEnd;
 
-	$('.clicked').click(function() {
-	  $(this).toggleClass('clicked');
-	});
+
+
+	// $('.clicked').click(function() {
+	//   $(this).toggleClass('clicked');
+	// });
+
+
+	let colorPicker = document.getElementById('colorPicker');
+
+
+	$('#pixel_canvas').on("click", 'td', function() {
+	    //alert ("Hello World!");
+	    $(this).css("background-color", function() {
+	    	return colorPicker.value;
+	    })
+	})
+
+//reset button
+
 
 };
-
 
 function resetGrid() {
 	document.getElementById('pixel_canvas').innerHTML = '';
 
-}
+};
+
+
 
 
 

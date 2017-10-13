@@ -38,9 +38,9 @@ td {
     // background-color: pink;
 }
 
-.clicked {
-    background-color: pink;
-}
+// .clicked {
+//     background-color: pink;
+// }
 
 input[type=number] {
     width: 6em;
