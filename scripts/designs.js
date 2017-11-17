@@ -1,13 +1,13 @@
 
 
 
-//function to make grid
+
 function makeGrid() {
 
-	const gridHeight = document.getElementById('input_height').value;
-	const gridWidth = document.getElementById('input_width').value;
-	const tableBegin = '<table border="1">\n';
-	const tableBody = '';
+	let gridHeight = document.getElementById('input_height').value;
+	let gridWidth = document.getElementById('input_width').value;
+	let tableBegin = '<table border="1">\n';
+	let tableBody = '';
 	
 
 	for (let i = 0; i < gridHeight; i++) {
@@ -15,14 +15,15 @@ function makeGrid() {
 		tableBody += '<tr>';
 		for (let j = 0; j < gridWidth; j++) {
 			tableBody += '<td class="clicked">'; 
+			//tableBody += 'Cell' + i + ',' + j;
 			tableBody += '</td>';
 		}
 		tableBody += '</tr>\n';
 	}
-	const tableEnd = '</table>';
+	let tableEnd = '</table>';
 	document.getElementById('pixel_canvas').innerHTML = tableBegin + tableBody + tableEnd;
 
-	const colorPicker = document.getElementById('colorPicker');
+	let colorPicker = document.getElementById('colorPicker');
 
 	$('#pixel_canvas').on("click", 'td', function() {
 	    $(this).css("background-color", function() {
@@ -31,8 +32,7 @@ function makeGrid() {
 	})
 };
 
-//function to reset the grid
-function resetGrid() {
+function deleteGrid() {
 	document.getElementById('pixel_canvas').innerHTML = '';
 
 };

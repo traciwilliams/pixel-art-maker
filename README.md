@@ -1,16 +1,13 @@
-# Pixel Art Maker Project
+# Project title: Pixel Art Maker Project
 
-## Table of Contents
+## A project taking a user's numerical input to create a grid. After the grid has been created a user is able to color the grid. If the user wishes to change the color, the color icon can be selected to switch colors. The user is able to delete the entire grid and start the process over.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
 
-## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+## Technology Used
+HTML, CSS, jQuery
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
-## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+
+![Alt text](screenshot.jpg?raw=true "Pixel Art Maker")
