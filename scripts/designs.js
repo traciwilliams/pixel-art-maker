@@ -1,6 +1,6 @@
 
 
-
+//function to create the grid based on the user's input for height and width
 
 function makeGrid() {
 
@@ -32,6 +32,7 @@ function makeGrid() {
 	})
 };
 
+//function to delete entire grid
 function deleteGrid() {
 	document.getElementById('pixel_canvas').innerHTML = '';
 
